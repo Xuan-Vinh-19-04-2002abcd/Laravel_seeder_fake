@@ -15,4 +15,36 @@
     <link rel="stylesheet" title="style" href="source/assets/dest/css/style.css">
     <link rel="stylesheet" href="source/assets/dest/css/animate.css">
     <link rel="stylesheet" title="style" href="source/assets/dest/css/huong-style.css">
+<style>
+     body {
+  padding: 2%;
+  text-align: center;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 300px;
+  width: 1200px;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 5s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 1200px;
+}
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  80% {margin-left: -1456px;}
+}   
+</style>
 </head>

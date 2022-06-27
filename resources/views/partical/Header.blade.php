@@ -94,9 +94,11 @@
                         <li><a href="index.html">Trang chủ</a></li>
                         <li><a href="#">Sản phẩm</a>
                             <ul class="sub-menu">
-                                <li><a href="product_type.html">Sản phẩm 1</a></li>
-                                <li><a href="product_type.html">Sản phẩm 2</a></li>
-                                <li><a href="product_type.html">Sản phẩm 4</a></li>
+                                @if (isset($listType))
+                                    @foreach ($listType as $key => $type  )
+                                    <li><a href="product_type.html">{{$type->name}}</a></li>
+                                    @endforeach
+                                @endif
                             </ul>
                         </li>
                         <li><a href="about.html">Giới thiệu</a></li>
@@ -106,4 +108,14 @@
                 </nav>
             </div> <!-- .container -->
         </div> <!-- .header-bottom -->
+        <div id="slideshow">
+  <div class="slide-wrapper">
+    @if (isset($listSlide))
+        @foreach ($listSlide as $key => $slide )
+            <div class="slide"><img src="/source/image/slide/{{$slide ->image}}"></div>
+        @endforeach  
+    @endif
+    
+  </div>
 </div>
+    </div>

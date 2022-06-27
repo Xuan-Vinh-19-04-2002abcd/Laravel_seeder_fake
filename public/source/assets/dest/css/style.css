@@ -5074,9 +5074,9 @@ tfoot td a i {
     .auto-width-right ul li a {
         padding: 0px 4px;
     }
-    .pull-left.auto-width: {
+    /* .pull-left.auto-width:{
         width: auto !important;
-    }
+    } */
     .beta-comp from {
         width: 70% !important;
     }

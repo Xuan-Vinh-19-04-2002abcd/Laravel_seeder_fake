@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\crudDatabase;
 use Illuminate\Http\Response;
+
 class Postcontroller extends Controller
 {
     /**
@@ -14,12 +15,7 @@ class Postcontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $a = new crudDatabase();
-        $b = $a ->getAllData();
-        return response()->json($b, Response::HTTP_OK);
-    }
+    
 
     /**
      * Store a newly created resource in storage.
@@ -29,7 +25,6 @@ class Postcontroller extends Controller
      */
     public function store(Request $request)
     {
-        
     }
 
     /**
