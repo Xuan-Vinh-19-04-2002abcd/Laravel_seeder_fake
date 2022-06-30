@@ -34,6 +34,7 @@ class Product extends Model
             ->where('id', [$id])
             ->delete();
     }
+ 
 }
 //b1: xử lí model, gọi bảng
 //b2: Xử lí controller, tạo các truy vấn, return compact .. biến

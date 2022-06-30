@@ -66,7 +66,7 @@
                      <span style="color: red">{{$message}}</span>
                  @enderror
             <div class="form-group">
-                <img id="preview-image-before-upload" src="https://www.riobeauty.co.uk/images/product_image_not_found.gif" alt="preview image" style="max-height: 250px;">
+                <img id="preview-image-before-upload" src="/source/image/product/" alt="preview image" style="max-height: 250px;">
                 <script type="text/javascript">
                     $(document).ready(function(e) {
                         $('#inputImage').change(function() {

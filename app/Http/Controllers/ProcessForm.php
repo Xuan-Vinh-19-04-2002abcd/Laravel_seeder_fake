@@ -69,4 +69,9 @@ class ProcessForm extends Controller
         $product->Destroy_product($id);
         return redirect()->route('showProduct');
     }
+    public function Detail($id){
+        $product = new Product();
+        $sanpham = $product->getDataToEdit($id);
+        return view('partical.deatail',compact('sanpham'));
+    }
 }   

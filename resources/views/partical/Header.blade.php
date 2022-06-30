@@ -91,7 +91,7 @@
                 <div class="visible-xs clearfix"></div>
                 <nav class="main-menu">
                     <ul class="l-inline ov">
-                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="/">Trang chủ</a></li>
                         <li><a href="#">Sản phẩm</a>
                             <ul class="sub-menu">
                                 @if (isset($listType))
@@ -103,6 +103,7 @@
                         </li>
                         <li><a href="about.html">Giới thiệu</a></li>
                         <li><a href="contacts.html">Liên hệ</a></li>
+                        <li><a href="{{route('showProduct')}}">Admin</a></li>
                     </ul>
                     <div class="clearfix"></div>
                 </nav>

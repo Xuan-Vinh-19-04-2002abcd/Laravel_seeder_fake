@@ -36,3 +36,4 @@ Route::get("/admin", [ProcessForm::class,'showAdmin'])->name('showProduct');
 Route::get("admin-edit-form/{id}", [ProcessForm::class, 'getID']);
 Route::post("/admin-edit/id={id}", [ProcessForm::class, 'Edit']);
 Route::post("admin-delete/{id}", [ProcessForm::class, 'Delete']);
+Route::get("detail/{id}", [ProcessForm::class, 'Detail']);
