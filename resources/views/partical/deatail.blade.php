@@ -1,3 +1,4 @@
+@include('partical.head')
 </html>	
 <div class="inner-header">
   <div class="container">

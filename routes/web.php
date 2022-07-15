@@ -37,3 +37,8 @@ Route::get("admin-edit-form/{id}", [ProcessForm::class, 'getID']);
 Route::post("/admin-edit/id={id}", [ProcessForm::class, 'Edit']);
 Route::post("admin-delete/{id}", [ProcessForm::class, 'Delete']);
 Route::get("detail/{id}", [ProcessForm::class, 'Detail']);
+Route::get("/register", [ProductController::class,'showRegister']);
+Route::post("/register", [ProductController::class,'Register']);
+Route::get("/login", [ProductController::class, 'showLogin']);
+Route::post("/login", [ProductController::class, 'Login']);
+Route::get('/logout', [ProductController::class, 'Logout']);
